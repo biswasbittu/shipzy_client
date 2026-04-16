@@ -1,0 +1,122 @@
+[
+  {
+    "id": "5f47ac10b4f1c03e8c100001",
+    "user_email": "alice.smith@example.com",
+    "userName": "Alice Smith",
+    "delivery_email": "delivery2@example.com",
+    "ratings": 4.2,
+    "review": "Fast delivery and good packaging.",
+    "parcel_id": "5f47ac10b4f1c03e8c200001",
+    "pick_up_email": "pickup2@example.com",
+    "user_photoURL": "https://randomuser.me/api/portraits/women/11.jpg",
+    "date": "2024-05-09T10:15:00.000Z"
+  },
+  {
+    "id": "5f47ac10b4f1c03e8c100002",
+    "user_email": "michael.brown@example.com",
+    "userName": "Michael Brown",
+    "delivery_email": "delivery3@example.com",
+    "ratings": 3.8,
+    "review": "Delivery was delayed but service was okay.",
+    "parcel_id": "5f47ac10b4f1c03e8c200002",
+    "pick_up_email": "pickup3@example.com",
+    "user_photoURL": "https://randomuser.me/api/portraits/men/12.jpg",
+    "date": "2024-05-10T12:45:00.000Z"
+  },
+  {
+    "id": "5f47ac10b4f1c03e8c100003",
+    "user_email": "emma.wilson@example.com",
+    "userName": "Emma Wilson",
+    "delivery_email": "delivery4@example.com",
+    "ratings": 5.0,
+    "review": "Excellent service! Highly recommended.",
+    "parcel_id": "5f47ac10b4f1c03e8c200003",
+    "pick_up_email": "pickup4@example.com",
+    "user_photoURL": "https://randomuser.me/api/portraits/women/13.jpg",
+    "date": "2024-05-11T09:20:00.000Z"
+  },
+  {
+    "id": "5f47ac10b4f1c03e8c100004",
+    "user_email": "liam.jones@example.com",
+    "userName": "Liam Jones",
+    "delivery_email": "delivery5@example.com",
+    "ratings": 4.0,
+    "review": "Good experience overall.",
+    "parcel_id": "5f47ac10b4f1c03e8c200004",
+    "pick_up_email": "pickup5@example.com",
+    "user_photoURL": "https://randomuser.me/api/portraits/men/14.jpg",
+    "date": "2024-05-12T16:10:00.000Z"
+  },
+  {
+    "id": "5f47ac10b4f1c03e8c100005",
+    "user_email": "olivia.martin@example.com",
+    "userName": "Olivia Martin",
+    "delivery_email": "delivery6@example.com",
+    "ratings": 4.7,
+    "review": "Very smooth and quick delivery.",
+    "parcel_id": "5f47ac10b4f1c03e8c200005",
+    "pick_up_email": "pickup6@example.com",
+    "user_photoURL": "https://randomuser.me/api/portraits/women/15.jpg",
+    "date": "2024-05-13T11:05:00.000Z"
+  },
+  {
+    "id": "5f47ac10b4f1c03e8c100006",
+    "user_email": "noah.taylor@example.com",
+    "userName": "Noah Taylor",
+    "delivery_email": "delivery7@example.com",
+    "ratings": 3.5,
+    "review": "Average service, needs improvement.",
+    "parcel_id": "5f47ac10b4f1c03e8c200006",
+    "pick_up_email": "pickup7@example.com",
+    "user_photoURL": "https://randomuser.me/api/portraits/men/16.jpg",
+    "date": "2024-05-14T14:55:00.000Z"
+  },
+  {
+    "id": "5f47ac10b4f1c03e8c100007",
+    "user_email": "ava.anderson@example.com",
+    "userName": "Ava Anderson",
+    "delivery_email": "delivery8@example.com",
+    "ratings": 4.9,
+    "review": "Super fast and very professional staff.",
+    "parcel_id": "5f47ac10b4f1c03e8c200007",
+    "pick_up_email": "pickup8@example.com",
+    "user_photoURL": "https://randomuser.me/api/portraits/women/17.jpg",
+    "date": "2024-05-15T08:40:00.000Z"
+  },
+  {
+    "id": "5f47ac10b4f1c03e8c100008",
+    "user_email": "william.thomas@example.com",
+    "userName": "William Thomas",
+    "delivery_email": "delivery9@example.com",
+    "ratings": 4.3,
+    "review": "Reliable service and friendly delivery person.",
+    "parcel_id": "5f47ac10b4f1c03e8c200008",
+    "pick_up_email": "pickup9@example.com",
+    "user_photoURL": "https://randomuser.me/api/portraits/men/18.jpg",
+    "date": "2024-05-16T13:25:00.000Z"
+  },
+  {
+    "id": "5f47ac10b4f1c03e8c100009",
+    "user_email": "sophia.jackson@example.com",
+    "userName": "Sophia Jackson",
+    "delivery_email": "delivery10@example.com",
+    "ratings": 3.9,
+    "review": "Packaging was good but delivery was slightly late.",
+    "parcel_id": "5f47ac10b4f1c03e8c200009",
+    "pick_up_email": "pickup10@example.com",
+    "user_photoURL": "https://randomuser.me/api/portraits/women/19.jpg",
+    "date": "2024-05-17T17:50:00.000Z"
+  },
+  {
+    "id": "5f47ac10b4f1c03e8c100010",
+    "user_email": "james.white@example.com",
+    "userName": "James White",
+    "delivery_email": "delivery11@example.com",
+    "ratings": 4.6,
+    "review": "Great service, will use again.",
+    "parcel_id": "5f47ac10b4f1c03e8c200010",
+    "pick_up_email": "pickup11@example.com",
+    "user_photoURL": "https://randomuser.me/api/portraits/men/20.jpg",
+    "date": "2024-05-18T15:35:00.000Z"
+  }
+]
