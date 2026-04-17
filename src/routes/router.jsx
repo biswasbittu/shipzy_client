@@ -20,7 +20,9 @@ const router = createBrowserRouter([
         {
           path:'coverage',
           Component:Coverages,
-        }
+          loader:()=>fetch('/serviceCenter.json').then(res=>res.json())
+        },
+
     ]
   },
 ]);

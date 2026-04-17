@@ -59,7 +59,7 @@
     "region": "West Bengal",
     "district": "Nadia",
     "city": "Krishnanagar",
-    "covered_area": ["Ranaghat", "Kalyani", "Shantipur", "Tehatta"],
+    "covered_area": ["Ranaghat", "Bagula", "Kalyani", "Shantipur", "Tehatta"],
     "status": "active",
     "flowchart": "https://example.com/nadia.png",
     "longitude": 88.5220,
