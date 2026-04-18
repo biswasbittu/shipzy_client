@@ -1,6 +1,7 @@
 import React from 'react';
 import Logo from '../../../components/Logo/Logo';
 import { NavLink } from 'react-router';
+import { LuLogIn } from 'react-icons/lu';
 
 const Navbar = () => {
     const menuItems = <>
@@ -31,7 +32,8 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn">Button</a>
+                <NavLink className="btn" to='/login'>Log In <LuLogIn /></NavLink>
+                
             </div>
         </div>
     );
