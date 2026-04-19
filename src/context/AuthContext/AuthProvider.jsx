@@ -1,19 +1,28 @@
 import React from 'react';
 import { AuthContext } from './AuthContext';
-import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
+import { createUserWithEmailAndPassword, GoogleAuthProvider, signInWithEmailAndPassword, signInWithPopup } from "firebase/auth";
 import { auth } from '../../firebase/firebase.init';
 
 const AuthProvider = ({ children }) => {
+
+    const googleProvider= new GoogleAuthProvider();
+
+
     const registerUser = (email, password) => {
         return createUserWithEmailAndPassword(auth, email, password)
     };
 
     const signinUser=(email,password)=>{
         return signInWithEmailAndPassword(auth,email,password)
+    };
+
+    const signInWithGoogle = ()=>{
+        return signInWithPopup(auth,googleProvider)
     }
     const authInfo = {
         registerUser,
         signinUser,
+        signInWithGoogle,
     }
     return (
         <AuthContext value={authInfo}>

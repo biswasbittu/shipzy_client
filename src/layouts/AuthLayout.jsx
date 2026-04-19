@@ -1,11 +1,11 @@
 import React from 'react';
 import Logo from '../components/Logo/Logo';
-import { Outlet } from 'react-router';
+import { Link, Outlet } from 'react-router';
 import authImg from '../assets/authImg/login.jpeg'
 const AuthLayout = () => {
     return (
         <div className='container mx-auto'>
-            <Logo />
+            <Link to="/"><Logo /></Link>
             <div className='flex flex-col-reverse md:flex-row justify-center items-center'>
                 <div className='flex-1   md:pl-96'>
                     <Outlet />

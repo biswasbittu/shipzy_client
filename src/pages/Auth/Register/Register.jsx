@@ -3,6 +3,7 @@ import { useForm } from 'react-hook-form';
 import { Link } from 'react-router';
 import useAuth from '../../../hooks/useAuth';
 import Swal from 'sweetalert2';
+import SocialLogin from '../SocialLogin/SocialLogin';
 
 const Register = () => {
 
@@ -45,10 +46,13 @@ const Register = () => {
     }
     return (
         <div>
-            <form onSubmit={handleSubmit(handleRegister)}>
-                <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+            
+            
+                <div className="card bg-base-100 w-full mx-auto max-w-sm shrink-0 shadow-2xl">
+                    <h3 className="text-3xl text-center">WelCome Back</h3>
                     <div className="card-body">
-                        <fieldset className="fieldset">
+                        <form onSubmit={handleSubmit(handleRegister)}>
+                            <fieldset className="fieldset">
 
                             <label className='lable' > Name</label>
                             <input type="name" {...register('name', { required: true, minLength: 4, maxLength: 20, pattern: /^[A-Za-z]+(?: [A-Za-z]+)* ?$/ })} className="input" placeholder="Full Name" />
@@ -72,12 +76,14 @@ const Register = () => {
                             {errors.password?.type === 'pattern' && <p className='text-red-600'>Password must contain at least one Upper letter, one lower letter and one special character </p>}
 
 
-                            <div><p >Don't have an account ? please <Link to='/login' className="link link-hover text-blue-600 hover:text-fuchsia-600"> login</Link></p></div>
+                            <div><p >Already have an account ? please <Link to='/login' className="link link-hover text-blue-600 hover:text-fuchsia-600"> login</Link></p></div>
                             <button className="btn btn-neutral mt-4">Register</button>
                         </fieldset>
+                        </form>
+                        <SocialLogin/>
                     </div>
                 </div>
-            </form>
+            
         </div>
     );
 };
