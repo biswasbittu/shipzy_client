@@ -2,15 +2,23 @@ import React from 'react';
 import Logo from '../../../components/Logo/Logo';
 import { NavLink } from 'react-router';
 import { LuLogIn } from 'react-icons/lu';
+import useAuth from '../../../hooks/useAuth'
+import { IoLogInOutline } from 'react-icons/io5';
 
 const Navbar = () => {
+    const { user,logOut  } = useAuth()
+    
     const menuItems = <>
         <li><NavLink to="/">Home</NavLink></li>
-        
+
         <li><NavLink to='/coverage'>Coverage</NavLink></li>
         <li><NavLink>About Us</NavLink></li>
 
     </>
+    const handleLogout = () => {
+        
+        logOut().then().catch(error => console.log(error))
+    }
     return (
         <div className="navbar bg-base-100 shadow-sm">
             <div className="navbar-start">
@@ -24,7 +32,7 @@ const Navbar = () => {
                         {menuItems}
                     </ul>
                 </div>
-                <a className="btn btn-ghost text-xl"><Logo/></a>
+                <a className="btn btn-ghost text-xl"><Logo /></a>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
@@ -32,8 +40,10 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <NavLink className="btn" to='/login'>Log In <LuLogIn /></NavLink>
-                
+                {
+                    user ? <button className='btn' onClick={handleLogout}>log out <IoLogInOutline /></button> : <NavLink className="btn" to='/login'>Log In <LuLogIn /></NavLink>
+                }
+
             </div>
         </div>
     );
