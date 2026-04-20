@@ -4,6 +4,7 @@ import { NavLink } from 'react-router';
 import { LuLogIn } from 'react-icons/lu';
 import useAuth from '../../../hooks/useAuth'
 import { IoLogInOutline } from 'react-icons/io5';
+import { RiArrowRightUpLongLine } from 'react-icons/ri';
 
 const Navbar = () => {
     const { user,logOut  } = useAuth()
@@ -41,8 +42,11 @@ const Navbar = () => {
             </div>
             <div className="navbar-end">
                 {
-                    user ? <button className='btn' onClick={handleLogout}>log out <IoLogInOutline /></button> : <NavLink className="btn" to='/login'>Log In <LuLogIn /></NavLink>
+                    user ? <button className='btn' onClick={handleLogout}>log out <IoLogInOutline /></button> : 
+                    <NavLink className="btn" to='/login'>Log In <LuLogIn /></NavLink>
                 }
+
+                <NavLink className="btn btn-primary mx-4" to='/beArider'>Be a rider<RiArrowRightUpLongLine /></NavLink>
 
             </div>
         </div>
